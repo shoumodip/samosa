@@ -14,7 +14,7 @@ const game = {
       game.enemy.list.push({
         x: (0.1 + Math.random() * 0.8) * game.app.width,
         y: 0,
-        dy: 1.2,
+        dy: 2.4,
         life: 3
       })
     },
@@ -59,8 +59,8 @@ const game = {
       game.samosa.list.push({
         x: game.app.width * 0.5,
         y: game.app.height * 0.88,
-        dx: Math.cos(dir) * 10,
-        dy: Math.sin(dir) * 10,
+        dx: Math.cos(dir) * 20,
+        dy: Math.sin(dir) * 20,
         dir: dir,
         type: type
       })
@@ -88,7 +88,7 @@ const game = {
 
               case 2:
                 enemy.life--
-                enemy.dy -= 0.4
+                enemy.dy -= 0.8
                 break
             }
 
